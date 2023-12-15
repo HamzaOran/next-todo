@@ -17,16 +17,16 @@ export default async function Home() {
 
   return (
     <>
-      <header className="flex justify-between items-center mb-4">
-        <h1>Todos</h1>
+      <header className="flex justify-between items-center mb-10 ">
+        <h1 className="text-6xl">Todo List</h1>
         <Link
-          className="border border-slate-900 px-6 py-3 rounded hover:bg-slate-700 hover:text-slate-200 focus-within:bg-slate-700 outline-none"
+          className="border border-slate-900 px-6 py-3 rounded hover:bg-slate-700 hover:text-slate-200 focus-within:bg-slate-700 outline-none text-3xl"
           href="/new"
         >
           New
         </Link>
       </header>
-      <ul className="pl-4">
+      <ul className="flex flex-col justify-center items-center">
         {todos.map((todo) => (
           <TodoItem key={todo.id} {...todo} toggleTodo={toggleTodo} />
         ))}

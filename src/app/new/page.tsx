@@ -18,7 +18,7 @@ export default function New() {
   return (
     <>
       <header className="flex justify-between items-center mb-4 bg- ">
-        <h1>New</h1>
+        <h1>New Task</h1>
       </header>
       <form action={createTodo} className="flex gap-6 flex-col">
         <input
